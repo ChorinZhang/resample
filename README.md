@@ -6,15 +6,25 @@ Specifically, if the original image has a size of **n × m** and is downsampled 
 
 ### Example
 
-If the original image has a size of **5 × 5**, and the target downsampled image is **4 × 2**, the transformation process would look like this:
+If the original image (O) has a size of **5 × 5**, and the target downsampled image (D) is **4 × 2**, the transformation process would look like this:
 
 $$
+D=L \cdot O \cdot R \\
 L=\left[
 \begin{matrix}
-1 & 2 & 3 \\\\
-4 & 5 & 6 \\\\
-7 & 8 & 9
+1 & 0.25 & \ & \\
+ \  & 0.75 & 0.5 &  \ \\
+ \  &  \  & 0.5 & 0.75 &  \ \\
+ \  &  \  & \ & 0.25 &  1 & \ \\
+\end{matrix}
+\right], \
+R=\left[
+\begin{matrix}
+1 & \ \\
+1 & \ \\
+0.5 & 0.5 \\
+\ & 1 \\
+\ & 1 \\
 \end{matrix}
 \right]
-\tag{3}
 $$
