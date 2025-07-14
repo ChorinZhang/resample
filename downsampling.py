@@ -84,8 +84,6 @@ if __name__=="__main__":
     in_data = np.array(img)  
     out_data=downsampling(in_data,72,144)
     
-    
-    
     cv2.imwrite('output.png', out_data) 
         
     
