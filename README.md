@@ -7,8 +7,9 @@ Specifically, if the original image has a size of **n × m** and is downsampled 
 ### Example
 
 If the original image (O) has a size of **5 × 5**, and the target downsampled image (D) is **4 × 2**, the transformation process would look like this:
+
 $$
-D=L \cdot O \cdot R
+D=L \cdot O \cdot R \split
 L=\left[
 \begin{matrix}
 1 & 0.25 & \ & \\
